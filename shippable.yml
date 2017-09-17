@@ -4,7 +4,8 @@ jdk:
  - openjdk8
 
 after-success:
- - mvn build cobertura:cobertura
+ - del -f /root/.m2/repository/com/mycompany/StudentRegistrationSystem/1.0-SNAPSHOT/StudentRegistrationSystem-1.0-SNAPSHOT.jar
+ - mvn clean cobertura:cobertura
  - mvn test
  
 notifications:
