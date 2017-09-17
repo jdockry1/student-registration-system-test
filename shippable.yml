@@ -3,12 +3,8 @@ language: java
 jdk:
  - openjdk8
 
-before-install:
- - mvn clean dependency:copy-dependencies
- - mkdir /root/.m2/repository/com/mycompany/StudentRegistrationSystem/1.0-SNAPSHOT/StudentRegistrationSystem-1.0-SNAPSHOT.jar
-
 after-success:
- - mvn clean cobertura:cobertura
+ - mvn build cobertura:cobertura
  - mvn test
  
 notifications:
