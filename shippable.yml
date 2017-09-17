@@ -2,9 +2,9 @@ language: java
 
 jdk:
  - openjdk8
- 
+
 after-success:
- - mvn clean cobertura:cobertura
+ - mvn clean dependency:copy-dependencies cobertura:cobertura
  - mvn test
  
 notifications:
