@@ -20,8 +20,8 @@
     </dependencies>
     <repositories>  
         <repository>
-            <id>student-registration-system</id>
-            <url>https://github.com/jdockry1/student-registration-system</url>
+            <id>StudentRegistrationSystem</id>
+            <url>https://www.dropbox.com/sh/rcgs65q8hgobdkr/AACKIMrUvauzIf6laCYZgws7a?dl=0</url>
             <snapshots>
                 <enabled>true</enabled>
                 <updatePolicy>always</updatePolicy>
