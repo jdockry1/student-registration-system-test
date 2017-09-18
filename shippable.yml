@@ -2,12 +2,9 @@ language: java
 
 jdk:
  - openjdk8
- 
-before-install:
- - mvn dependency:purge-local-repository
 
 after-success:
- - mvn clean cobertura:cobertura
+ - mvn build
  - mvn test
  
 notifications:
