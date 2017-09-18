@@ -4,7 +4,7 @@ jdk:
  - openjdk8
 
 after-success:
- - del -f /root/.m2/repository/com/mycompany/StudentRegistrationSystem/1.0-SNAPSHOT/StudentRegistrationSystem-1.0-SNAPSHOT.jar
+ - mvn dependency:purge-local-repository
  - mvn clean cobertura:cobertura
  - mvn test
  
