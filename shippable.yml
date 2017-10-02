@@ -8,7 +8,7 @@ build:
   cache_dir_list:
    - /root/.m2
   ci:
-   - mvn install
+   - mvn clean install
 
 notifications:
   email:
