@@ -6,7 +6,8 @@ jdk:
 build:
   cache: true
   ci:
-   - mvn compile
+   - rm ~/.m2/repository/com/mycompany/StudentRegistrationSystem/1.0-SNAPSHOT/StudentRegistrationSystem-1.0-SNAPSHOT.jar
+   - mvn install
 
 notifications:
   email:
