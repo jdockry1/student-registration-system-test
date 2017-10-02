@@ -10,4 +10,4 @@ after-success:
 notifications:
   email:
     recipients:
-      j.dockry1@nuigalway.ie
+      - j.dockry1@nuigalway.ie
