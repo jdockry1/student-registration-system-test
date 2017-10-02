@@ -5,10 +5,9 @@ jdk:
  
 build:
   cache: true
+  ci:
+   - mvn deploy
 
-script:
- - mvn deploy
- 
 notifications:
   email:
     recipients:
