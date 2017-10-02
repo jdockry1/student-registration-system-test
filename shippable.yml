@@ -3,9 +3,8 @@ language: java
 jdk:
  - openjdk8
 
-after-success:
- - mvn clean cobertura:cobertura
- - mvn test
+script:
+ - mvn deploy
  
 notifications:
   email:
