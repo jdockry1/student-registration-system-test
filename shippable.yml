@@ -6,7 +6,7 @@ jdk:
 build:
   cache: true
   ci:
-   - mvn deploy
+   - mvn compile
 
 notifications:
   email:
